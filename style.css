@@ -1,0 +1,64 @@
+:root{
+    --color: #00ccff;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+*{
+    color:var(--fontColor);
+    font-family: helvetica;
+}
+
+body{
+   background:  var(--bg);
+}
+
+ul{
+    font-family: Helvetica;
+}
+
+li{
+    list-style: circle;
+}
+
+.list{
+    list-style: square;
+}
+
+#msg{
+    font-family: monospace;
+}
+
+.light-theme{
+    --bg: var(--color);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--color);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn{
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    
+}
+
+.btn{
+    position: absolute;
+    top: 20PX;
+    left: 250PX;
+    height: 50PX;
+    width: 50PX;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus{ outline-style: none;}
